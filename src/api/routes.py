@@ -16,3 +16,8 @@ def handle_hello():
     }
 
     return jsonify(response_body), 200
+
+
+@api.route('/login', methods=['GET'])
+def login():
+    return jsonify({ "msg": "Esto es una prueba"}), 200
